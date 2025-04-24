@@ -1,24 +1,27 @@
-# Arquivo requirements.txt
-# Salve este conteúdo em um arquivo chamado requirements.txt e execute pip install -r requirements.txt
-
 # Core packages
 streamlit>=1.30.0
 langchain>=0.1.0
 langchain-community>=0.0.15
 langchain-openai>=0.0.5
 langchain-groq>=0.1.0
-fake-useragent>=1.2.0
+openai>=1.3.0
 python-dotenv>=1.0.0
+
+# Document processing - Modified
 docling
-# Document loader dependencies
-beautifulsoup4>=4.12.2  # Para WebBaseLoader
-youtube-transcript-api>=0.6.1  # Para YoutubeLoader
-pypdf>=3.17.0  # Para PyPDFLoader
-unstructured[local-inference]>=0.10.30  # Para UnstructuredImageLoader
-pytube>=15.0.0  # Para YoutubeLoader
-# Comando para instalar todos os requisitos
-# pip install -r requirements.txt
-streamlit_webrtc
-pydub
-moviepy
-opencv-python-headless
+fake-useragent>=1.2.0
+youtube-transcript-api>=0.6.1
+
+# Audio/Video processing
+streamlit-webrtc>=0.47.0
+pydub>=0.25.1
+moviepy>=1.0.3
+opencv-python>=4.7.0  # Try standard version instead of headless
+
+# Document handling
+pypdf>=3.17.0
+unstructured>=0.10.30  # Removed [local-inference] which might cause issues
+python-docx>=0.8.11
+
+# Optional: for better performance
+pytube>=15.0.0
