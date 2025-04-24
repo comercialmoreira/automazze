@@ -359,7 +359,7 @@ Agora, responda às perguntas do usuário com inteligência, profundidade e clar
             
 
 def sidebar():
-    st.sidebar.image("./assets/image/logo.png", width=180)
+    st.sidebar.image("./assets/image/Logo.png", width=180)
     tabs = st.sidebar.tabs(['🤖 Seleção de Modelo'])
     
     with tabs[0]:
