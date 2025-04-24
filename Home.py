@@ -5,12 +5,12 @@ from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from loaders import *
-from dotenv import load_dotenv
+
 import os
 import re
 
 
-load_dotenv()
+
 
 st.set_page_config(
     layout="wide",
@@ -18,8 +18,8 @@ st.set_page_config(
     page_icon="🤖"
 )
 
-openai = os.getenv("OPENAI_API_KEY")
-groq = os.getenv("GROQ_API_KEY")
+openai = st.secrets("OPENAI_API_KEY")
+groq = st.secrets("GROQ_API_KEY")
 
 CONFIG_MODELOS = {
     'OpenAI': {

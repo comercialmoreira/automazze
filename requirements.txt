@@ -19,3 +19,5 @@ pytube>=15.0.0  # Para YoutubeLoader
 # Comando para instalar todos os requisitos
 # pip install -r requirements.txt
 streamlit_webrtc
+pydub
+moviepy
