@@ -1,0 +1,20 @@
+# Arquivo requirements.txt
+# Salve este conteúdo em um arquivo chamado requirements.txt e execute pip install -r requirements.txt
+
+# Core packages
+streamlit>=1.30.0
+langchain>=0.1.0
+langchain-community>=0.0.15
+langchain-openai>=0.0.5
+langchain-groq>=0.1.0
+fake-useragent>=1.2.0
+python-dotenv>=1.0.0
+docling
+# Document loader dependencies
+beautifulsoup4>=4.12.2  # Para WebBaseLoader
+youtube-transcript-api>=0.6.1  # Para YoutubeLoader
+pypdf>=3.17.0  # Para PyPDFLoader
+unstructured[local-inference]>=0.10.30  # Para UnstructuredImageLoader
+pytube>=15.0.0  # Para YoutubeLoader
+# Comando para instalar todos os requisitos
+# pip install -r requirements.txt
