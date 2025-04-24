@@ -139,6 +139,8 @@ def sidebar():
     st.sidebar.image("./assets/image/Logo.png", width=180)
     st.sidebar.divider()
     st.sidebar.markdown('### Dica: Após transcrever, copie o texto e mande pra um modelo de linguagem na "Home" para ele formatar em lista e tabelas. 😉')
+    st.sidebar.divider()
+    st.sidebar.caption("© 2025 autoMazze Assistant")
 # MAIN =====================================
 def main():
     sidebar()
