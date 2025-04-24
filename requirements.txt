@@ -21,3 +21,4 @@ pytube>=15.0.0  # Para YoutubeLoader
 streamlit_webrtc
 pydub
 moviepy
+opencv-python-headless
