@@ -18,8 +18,8 @@ st.set_page_config(
     page_icon="🤖"
 )
 
-openai = st.secrets("OPENAI_API_KEY")
-groq = st.secrets("GROQ_API_KEY")
+openai = st.secrets["OPENAI_API_KEY"]
+groq = st.secrets["GROQ_API_KEY"]
 
 CONFIG_MODELOS = {
     'OpenAI': {

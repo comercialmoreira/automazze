@@ -22,11 +22,11 @@ ARQUIVO_VIDEO_TEMP = PASTA_TEMP / 'video.mp4'
 ARQUIVO_MIC_TEMP = PASTA_TEMP / 'mic.mp3'
 
 # Properly initialize the OpenAI client with your API key
-api_key = st.secrets("OPENAI_API_KEY")
+api_key = st.secrets["OPENAI_API_KEY"]
 if not api_key:
     st.error("OpenAI API key not found. Please set the OPENAI_API_KEY environment variable.")
     st.stop()
-client = OpenAI(api_key=st.secrets("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 def transcreve_audio(caminho_audio, prompt):
     # Verifica se o arquivo tem um tamanho razoável
