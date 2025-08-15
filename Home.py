@@ -4,7 +4,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
-from loaders import *
+from loaders import carrega_site, carrega_youtube, carrega_pdf, carrega_docx, carrega_txt, carrega_csv, carrega_imagem
 
 import os
 import re
