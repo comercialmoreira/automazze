@@ -25,3 +25,5 @@ python-docx>=0.8.11
 
 # Optional: for better performance
 pytube>=15.0.0
+
+yt-dlp>=2024.10.22
