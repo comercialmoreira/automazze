@@ -24,13 +24,12 @@ groq = st.secrets["GROQ_API_KEY"]
 CONFIG_MODELOS = {
     'OpenAI': {
         'modelos': [
-            'gpt-4o-mini',  
-            'gpt-4.1-mini',
+            'gpt-5-mini',  
+            'gpt-5',
             'gpt-4.1-nano',
-            'gpt-o4-mini-high',
             'gpt-4o',
-            'gpt-4.1',
-            'gpt-4.5',
+            'gpt-5-nano',
+            'gpt-5',
         ],
         'chat': ChatOpenAI,
         'api_key': openai
